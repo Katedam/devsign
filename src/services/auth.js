@@ -22,7 +22,8 @@ export const handleAuth = () => {
             token: result.idToken,
             name: info.name,
             id: info.sub,
-            nickname: info.nickname
+            handle: info.nickname,
+            profileImage: info.picture
           });
         });
       } else {
