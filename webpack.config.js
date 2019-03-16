@@ -18,7 +18,7 @@ module.exports = {
     new CopyWebpackPlugin([{ 
       from: 'public'
     }]),
-    new DotenvPlugin(),
+    new DotenvPlugin({ systemvars: true }),
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanPlugin('./dist')
   ],
