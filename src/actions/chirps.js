@@ -1,5 +1,5 @@
 import { createAction } from 'promise-middleware-redux';
-import { getChirps } from '../services/mockChirps';
+import { getChirps } from '../services/chirps';
 
 export const [
   fetchChirps,
