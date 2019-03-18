@@ -7,7 +7,8 @@ const request = (path, method, body) => {
     body: body ? JSON.stringify(body) : null,
     headers: {
       Authorization: `Bearer ${getToken(store.getState())}`
-    }
+    },
+    credentials: 'include',
   })
     .then(res => [res.ok, res.json()])
     .then(([ok, json]) => {
