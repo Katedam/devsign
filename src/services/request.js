@@ -2,7 +2,7 @@ import store from '../store';
 import { getToken } from '../selectors/session';
 
 const request = (path, method, body) => {
-  return fetch(`${process.env.API_URL}${path}`, {
+  return fetch(`${process.env.API_URL}/${path}`, {
     method,
     body: body ? JSON.stringify(body) : null,
     headers: {
