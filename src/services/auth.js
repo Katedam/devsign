@@ -27,7 +27,7 @@ export const handleAuth = () => {
           });
         });
       } else {
-        reject(err || 'Somthing went wrong');
+        reject(err || 'Something went wrong');
       }
     });
   });

@@ -19,11 +19,11 @@ export default function App() {
     <Router>
       <>
       <Switch>
+        <Route path="/callback" component={Callback}></Route>
         <Route path="/loading" component={Loading} ></Route>
         <Route path="/signup" component={Signup}></Route>
         <Route path="/home" component={Home}></Route>
         <Route path="/profile" component={Profile}></Route>
-        <Route path="/callback" component={Callback}></Route>
         <Route exact path="/" component={withSession(Signin)}></Route>
       </Switch>
       </>
